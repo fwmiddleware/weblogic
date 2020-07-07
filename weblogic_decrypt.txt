@@ -1,0 +1,6 @@
+/app/osbfe/products/fmw/osb/common/bin/wlst.sh
+/app/osbfe/products/fmw/oracle_common/common/bin/wlst.sh
+domain = "/app/osbfe/co103esb/config/domains/osb_fe_domain/aserver/osb_fe_domain"
+service = weblogic.security.internal.SerializedSystemIni.getEncryptionService(domain)
+encryption = weblogic.security.internal.encryption.ClearOrEncryptedService(service)
+print encryption.decrypt("{AES}m2W5jlkA5B4RT+hSJSyvl+BQpi7gbhO59fCvv3grBMKq9iIzC1cLSqn7Nv7QmM+a")
